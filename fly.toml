@@ -1,23 +1,22 @@
-app = "host-langflow-7vdqqq"
-primary_region = "iad"
+app = "host-langflow-testandexperiment"     # <-- replace with your $APP
+primary_region = "fra"           # <-- replace with your $REGION
 
 [http_service]
-auto_start_machines = true
-auto_stop_machines = true
-force_https = true
-internal_port = 7860
-min_machines_running = 0
-processes = ["app"]
+  auto_start_machines = true
+  auto_stop_machines  = true
+  force_https         = true
+  internal_port       = 7860
+  min_machines_running = 0
+  processes = ["app"]
 
 [[vm]]
-cpu_kind = "performance"
-cpus = 2
-memory_mb = 4096
+  cpu_kind  = "performance"
+  cpus      = 2
+  memory_mb = 4096    # 4GB; change to 8192 if you still hit unpack issues
 
 [mounts]
-source="data"
-destination="/data"
-
+  source = "data"
+  destination = "/data"
 
 [build]
-image = "langflowai/langflow:latest"
+  image = "langflowai/langflow:latest"
