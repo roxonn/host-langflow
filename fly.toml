@@ -12,7 +12,7 @@ primary_region = "fra"           # <-- replace with your $REGION
 [[vm]]
   cpu_kind  = "performance"
   cpus      = 2
-  memory_mb = 4096    # 4GB; change to 8192 if you still hit unpack issues
+  memory_mb = 8192    # 4GB; change to 8192 if you still hit unpack issues
 
 [mounts]
   source = "data"
