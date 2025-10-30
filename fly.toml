@@ -15,8 +15,8 @@ cpus = 2
 memory_mb = 4096
 
 [mounts]
-  source = "data"
-  destination = "/var/lib/docker"
+source="data"
+destination="/data"
 
 
 [build]
