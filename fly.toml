@@ -10,7 +10,7 @@ min_machines_running = 0
 processes = ["app"]
 
 [[vm]]
-cpu_kind = "shared"
+cpu_kind = "performance"
 cpus = 2
 memory_mb = 4096
 
