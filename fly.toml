@@ -15,8 +15,9 @@ cpus = 2
 memory_mb = 4096
 
 [mounts]
-source = "data"
-destination = "/data"
+  source = "data"
+  destination = "/var/lib/docker"
+
 
 [build]
 image = "langflowai/langflow:latest"
